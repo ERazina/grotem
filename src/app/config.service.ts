@@ -9,8 +9,4 @@ export class ConfigService {
   constructor(private http: HttpClient) { }
 
   url = 'https://ssdev.superagent.ru/TestApp/Values/GetWithParent';
-
-  getConfig() {
-    return this.http.get<Config>(this.url);
-  }
 }

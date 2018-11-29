@@ -1,0 +1,18 @@
+<table matSort (matSortChange)="sortData($event)">
+  <tr>
+    <th mat-sort-header="check">Выбрать</th>
+    <th mat-sort-header="category">Категория</th>
+    <th mat-sort-header="name">Название</th>
+    <th mat-sort-header="prise">Цена</th>
+  </tr>
+
+  <tr *ngFor="let products of sortedData">
+    <td>{{products.check}}</td>
+    <td>{{products.category}}</td>
+    <td>{{products.name}}</td>
+    <td>{{products.prise}}</td>
+  </tr>
+</table>
+<button mat-raised-button color="primary" (click)="addToCart()">В корзину</button>
+
+
