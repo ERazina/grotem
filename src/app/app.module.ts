@@ -26,8 +26,8 @@ import { ProductTableComponent } from './product-table/product-table.component';
     HttpClientModule,
     MatSortModule,
     MatButtonModule,
-    MatCheckboxModule,
-    CdkTableModule
+    CdkTableModule,
+    MatCheckboxModule
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent]

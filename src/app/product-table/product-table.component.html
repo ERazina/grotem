@@ -7,7 +7,7 @@
   </tr>
 
   <tr *ngFor="let products of sortedData">
-    <td>{{products.check}}</td>
+    <td><mat-checkbox class="example-margin" [checked]="checked">Checked</mat-checkbox></td>
     <td>{{products.category}}</td>
     <td>{{products.name}}</td>
     <td>{{products.prise}}</td>

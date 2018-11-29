@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import {Sort} from '@angular/material';
 
+
 export interface Products {
   check: boolean;
   category: string;
@@ -16,6 +17,7 @@ export interface Products {
 export class ProductTableComponent {
 
   public isEmpty = false;
+  checked = false;
 
   products: Products[] = [
     {check: true, category: 'Сноуборд', name: 'Salomon', prise: 79},
